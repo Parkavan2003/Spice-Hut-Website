@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,600;1,700&display=swap');
+:root{
+    --red:#C70039;
+    --navy:#141E46;
+    --white:#FFF5E0;
+    --yellow:#FFCD4B;
+    --orange:#FF9800;
+    --lblue:#FFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.landing{
+    min-height: 100vh;
+    background-image: url(pexels-adhitya-rizky-4260541.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--white);
+    min-width: 90px;
+}
+header i{
+    padding-right: .5em;
+}
+header #logo i{
+    font-size: 2.4rem;
+}
+header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+header #logo{
+    flex: 3;
+    font-size: 2rem;
+    color: var(--white);
+    min-width: 300px;
+    color: #FF9800;
+}
+header #logo img{
+    width: 8rem;
+}
+header nav{
+    display: flex;
+    flex: 2;
+    font-size: 1.3rem;
+}
+header nav a{
+    flex: 1;
+    text-transform: uppercase;
+    min-width: 140px;
+}
+header nav a:hover{
+    color: var(--yellow);
+    font-size: 1.4rem;
+}
+.mainText{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--lblue);
+}
+.tagline1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.tagline2{
+    font-size: 2rem;
+}
+.callus{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.mainText button{
+   
+    display: inline-block;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    background: #fff;
+    line-height: 20px;
+    border-radius: 40px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+    margin-top: 2rem;
+}
+.mainText button:hover{
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+}
+.menu{
+    display: grid;
+    background-color: black;
+    color: var(--white);
+}
+#menuheading,
+#locationheading{
+    background: #000;
+    color: rgb(38, 185, 38);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding:40px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(326px,1fr));
+}
+.menu th{
+   font-size: 1.3rem;
+   color: var(--orange);
+   padding-bottom: 20px;
+}
+.menu table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu tr td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu tr td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.locations{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.locations h2{
+    margin-bottom: .8rem;
+    color: var(--lblue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.locations div{
+    min-width: 270px;
+    min-height: 170px;
+}
+footer{
+    background: rgb(5, 0, 0);
+    color: white;
+}
+.social-menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 2rem 0px;
+}
+.social-menu li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 5rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+.social-menu li a:hover{
+    transform: translate(0,-10%);
+}
+#copyright{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
